@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient(#f6cfbe, #b9dcf2);  
+}
+
+.main-header {
+    background: url("images/cairo.jpg");
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    color: white;
+    text-shadow: 0 0 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    padding: 25px;
+}
+
+#main-content {
+    display: block;
+    margin: 25px auto;
+    padding: 25px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+    text-shadow: 0 0 3px black;
+}
+
+#food-img{
+    color: white;
+    width: 200px;
+    height: 200px;
+    margin: 30px 50px;
+    border: 2px solid white;
+    border-radius: 100px;
+    background-image: url("images/food.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 15px white;
+    text-shadow: 0 0 4px black;
+}
+
+#places-img {
+    color: white;
+    width: 200px;
+    height: 200px;
+    margin: 30px 50px;
+    border: 2px solid white;
+    border-radius: 100px;
+    background-image: url("images/places.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 15px white;
+    text-shadow: 0 0 4px black;
+}
+
+#act-img {
+    color: white;
+    width: 200px;
+    height: 200px;
+    margin: 30px 50px;
+    border: 2px solid white;
+    border-radius: 100px;
+    background-image: url("images/activities.jpg");
+    background-size: cover;
+    box-shadow: 0px 0px 15px white;
+    text-shadow: 0 0 4px black;
+}
+
+
+#food-img:hover, #places-img:hover, #act-img:hover {
+    transform: scale(1.5);
+    text-shadow: 0 0 4px black;
+    border: 2px solid rgb(19, 18, 18);
+    box-shadow: 0px 0px 5px rgb(30, 29, 29);
+    font-size: larger;
+}
+
+.show:hover + .list-categories{
+    max-height: inherit;
+    opacity: 1;
+  }
+  
+  .list-categories{
+    list-style-type: none;
+    padding: 25px;
+    margin: 0px auto;
+    max-height: 0px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+  }
+
+.card {
+    width: 600px;
+    margin: 35px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: linear-gradient(#b9e0e7, #f7d8a0);  
+    color: #2b2d42;
+    border-left: 5px solid #62868b;
+    border-bottom: 5px solid #db8a12;
+}
+
+.guide-text {
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    text-shadow: 0 0 3px black;
+    margin: 15px auto 15px 0;
+    padding: 20px;
+}
+
+#pfp-img {
+    width: 300px;
+    box-shadow: 0px 0px 5px rgb(172, 62, 80);
+}
