@@ -20,14 +20,23 @@ body {
 }
 
 .text {
-    color: white;
-    text-shadow: 0 0 3px black;
+    color: white ;
+    text-shadow: 1px 1px 3px black;
+    text-align: center;
+    margin: 25px auto;
+    background-color: #f0d9a9;
+    box-shadow: 4px 4px #c2dfe5;
+    width: fit-content;
+    padding: 10px 25px;
+
 }
 
-#main-content {
-    display: block;
+#learn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     margin: 25px auto;
-    padding: 25px;
     color: white;
     font-weight: bolder;
     font-size: large;
@@ -35,17 +44,22 @@ body {
     text-align: center;
 }
 
-#food-img, #places-img, #act-img{
+.main-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #food-img,#places-img, #act-img {
     color: white;
     width: 200px;
     height: 200px;
-    margin: 25px auto;
+    margin: 25px;
     border: 2px solid white;
     border-radius: 100px;
     background-size: cover;
     box-shadow: 0px 0px 15px white;
     text-shadow: 0 0 4px black;
-}
+  }
 
 #food-img{
     background-image: url("images/food.jpg");
@@ -63,27 +77,28 @@ body {
 #food-img:hover, #places-img:hover, #act-img:hover {
     transform: scale(1.25);
     text-shadow: 0 0 4px black;
-    border: 2px solid rgb(19, 18, 18);
-    box-shadow: 0px 0px 5px rgb(30, 29, 29);
+    border: 2px solid #62868b;
+    box-shadow: 0px 0px 10px white;
     font-size: larger;
 }
 
-.show:hover + .list-categories{
-    max-height: inherit;
-    padding: 25px;
-    opacity: 1;
-  }
-  
-.list-categories{
+.list-categories {
     list-style-type: none;
     font-size: medium;
-    padding: 0px;
-    margin: 0px;
-    max-height: 0px;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    max-height: 0;
+    text-align: center;
     opacity: 0;
     transition: opacity 200ms ease;
   }
-
+  
+  .show:hover + .list-categories {
+    opacity: 1;
+    max-height: inherit;
+    padding: 10px 0 10px 0;
+  }
+  
 .card {
     width: 600px;
     margin: 35px auto;
