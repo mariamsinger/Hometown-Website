@@ -15,7 +15,7 @@ body {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 250px;
+    height: 150px;
     text-shadow: 0 0 3px black;
 }
 
@@ -23,11 +23,11 @@ body {
     color: white ;
     text-shadow: 1px 1px 3px black;
     text-align: center;
-    margin: 25px auto;
+    margin: 15px auto;
     background-color: #f0d9a9;
     box-shadow: 4px 4px #c2dfe5;
     width: fit-content;
-    padding: 10px 25px;
+    padding: 5px 25px;
 
 }
 
@@ -36,23 +36,24 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 25px auto;
+    margin: 15px auto;
     color: white;
     font-weight: bolder;
     font-size: large;
     text-shadow: 0 0 3px black;
     text-align: center;
 }
+
 .container > div{
     flex: 1;
 }
 
   
-  #food-img,#places-img, #act-img {
+#food-img,#places-img, #act-img {
     color: white;
-    width: 200px;
-    height: 200px;
-    margin: 25px;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
     border: 2px solid white;
     border-radius: 100px;
     background-size: cover;
@@ -74,7 +75,7 @@ body {
 
 
 #food-img:hover, #places-img:hover, #act-img:hover {
-    transform: scale(1.25);
+    transform: scale(1.10);
     text-shadow: 0 0 4px black;
     border: 2px solid #62868b;
     box-shadow: 0px 0px 10px white;
@@ -95,13 +96,14 @@ body {
   .show:hover + .list-categories {
     opacity: 1;
     max-height: inherit;
-    padding: 10px 0 10px 0;
+    padding: 5px 0 5px 0;
   }
   
 .card {
-    width: 600px;
-    margin: 35px auto;
-    padding: 20px;
+    width: 500px;
+    height: 200px;
+    margin: auto;
+    padding: 10px;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -116,14 +118,14 @@ body {
 
 .guide-text {
     color: white;
-    font-size: larger;
+    font-size: medium;
     font-weight: bolder;
     text-shadow: 0 0 3px black;
-    margin: 15px auto 15px 0;
-    padding: 20px;
+    margin: 5px auto 5px 0;
+    padding: 10px;
 }
 
 #pfp-img {
-    width: 300px;
+    width: 200px;
     box-shadow: 0px 0px 5px rgb(172, 62, 80);
 }
